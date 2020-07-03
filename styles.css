@@ -31,51 +31,6 @@ h1 {
     -webkit-animation: fadeIn ease 3s;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 p {
     font-size: 3em;
     color: #fff;
@@ -90,13 +45,6 @@ img {
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
-}
-
-@keyframes roll {
-    0% {
-        transform: scale(-1) rotate(5000deg);
-        border-radius: 100%;
-    }
 }
 
 
@@ -174,6 +122,64 @@ button:hover::after,
 button:focus::after {
     animation: none;
     display: none;
+}
+
+
+/* Header Animation */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Dice Roll Animation */
+
+@keyframes roll {
+    0% {
+        transform: scale(-1) rotate(5000deg);
+        border-radius: 100%;
+    }
 }
 
 
