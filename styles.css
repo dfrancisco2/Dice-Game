@@ -23,7 +23,6 @@ body {
 h1 {
     margin: 30px;
     font-family: 'Lobster', cursive;
-    text-shadow: 3px 0 #fff;
     font-size: 8rem;
     color: #00FFCB;
     animation: fadeIn ease 3s;
