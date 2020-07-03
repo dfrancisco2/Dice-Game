@@ -22,12 +22,10 @@ const diceGame = () => {
     }
 }
 
-diceGame();
-
 const refreshButton = document.querySelector('.refresh-button');
 
 const refreshPage = () => {
-    location.reload();
+    diceGame();
 }
 
 refreshButton.addEventListener('click', refreshPage);
