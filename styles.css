@@ -142,3 +142,9 @@ button:focus::after {
         opacity: 0;
     }
 }
+
+@media (max-width : 960px) {
+    .container {
+        width: 90%;
+    }
+}
