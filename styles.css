@@ -4,8 +4,9 @@
 
 .container {
     width: 70%;
-    margin: 200px auto;
+    margin: 160px auto;
     text-align: center;
+    padding: 20px;
 }
 
 .dice {
@@ -14,22 +15,71 @@
 }
 
 body {
-    background-color: #393e46;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='215' height='215' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2330353c' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #4fd1c5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='34.2' stroke-opacity='0.29' %3E%3Ccircle fill='%234fd1c5' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%2338c5c3' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%231eb8bf' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%2300abbb' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23009fb6' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230092b0' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%230085a9' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%230079a1' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23006c97' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2309608d' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23185381' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23204775' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23253b68' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2328305b' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2328244d' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2327193f' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23240e31' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
     margin: 30px;
     font-family: 'Lobster', cursive;
-    text-shadow: 5px 0 #232931;
+    text-shadow: 3px 0 #fff;
     font-size: 8rem;
-    color: #4FD1C5;
+    color: #00FFCB;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 p {
-    font-size: 2rem;
-    color: #4FD1C5;
-    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    color: #fff;
+    font-family: 'Lobster', cursive;
 }
 
 img {
@@ -44,7 +94,7 @@ img {
 
 @keyframes roll {
     0% {
-        transform: scale(-2) rotate(5000deg);
+        transform: scale(-1) rotate(5000deg);
         border-radius: 100%;
     }
 }
@@ -68,7 +118,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
-    color: #313133;
+    color: #fff;
     background: #4FD1C5;
     background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
     border: none;
@@ -98,7 +148,6 @@ button::before {
 
 .refresh-button:hover,
 .refresh-button:focus {
-    color: #313133;
     transform: translateY(-6px);
 }
 
@@ -143,7 +192,7 @@ button:focus::after {
     }
 }
 
-@media (max-width : 960px) {
+@media (max-width: 960px) {
     .container {
         width: 90%;
     }
