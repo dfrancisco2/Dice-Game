@@ -1,3 +1,5 @@
+// Execute the dice game
+
 const diceGame = () => {
     let randomNumber1 = Math.floor(Math.random() * 6);
     let randomNumber2 = Math.floor(Math.random() * 6);
